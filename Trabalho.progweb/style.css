@@ -1,0 +1,241 @@
+/*barra de navegação */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif
+}
+
+.navbar {
+    background-color: rgb(138, 137, 134);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(251, 250, 250);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: rgb(244, 246, 247);
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 15px;
+    border-right: 1px solid #fafafa;
+}
+
+.links a:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/*banner principal */
+
+.hero {
+    width: 94%;
+    min-height: 350px;
+    background-color: #d1c795;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    border: solid rgb(56, 50, 56);
+    border-radius: 10px;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-conteudo h1 {
+    font-family: Comfortaa, sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.hero-conteudo p {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 2px rgb(82, 81, 81);
+}
+
+button {
+    padding: 20px 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(122, 120, 120);
+    background-color: #878989;
+    color: #4e4e52;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a4b1b7;
+}
+
+/* cards */
+
+.cards {
+    padding: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    min-width: 220px;
+    padding: 20px;
+    background-color: #878989;
+    border-radius: 12px 25px;
+    box-shadow: 10px 10px 5px rgb(104, 101, 101);
+    box-shadow: inset 0px 0px 10px rgb(197, 195, 195);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cards h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-family: Comfortaa, sans-serif;
+}
+
+.card h3 {
+    font-family: Comfortaa, sans-serif;
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #666666;
+}
+
+.icone {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* Secao em Grade com CSS Grid */
+
+.grade {
+    padding: 40px;
+}
+
+.grade-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.item {
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #d1c795;
+}
+
+.item-destaque {
+    grid-column: span 2;
+    font-size: 20px;
+}
+
+.grade h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-family: Comfortaa, sans-serif;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(138, 137, 134);
+    padding: 30px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-secoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-secoes h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-secoes p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 4px 0;
+}
+
+.linksrapidos {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.linksrapidos a {
+    color: rgb(228, 225, 225);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-secoes a:hover {
+    color: #ffffff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+    color: #855f5f;
+}
