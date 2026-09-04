@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.65;
 }
 
 .logo {
@@ -47,6 +48,10 @@ body {
     border-right: 1px solid #fafafa;
 }
 
+.links a:hover {
+    color: #38bdf8;
+}
+
 .links a:last-child {
     border-right: none;
     padding-right: 0;
@@ -58,15 +63,13 @@ body {
 .hero {
     width: 94%;
     min-height: 350px;
-    background-color: #d1c795;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 40px;
-    border: solid rgb(56, 50, 56);
+    margin-top: 10px;
     border-radius: 10px;
 }
 
@@ -86,8 +89,9 @@ body {
 }
 
 .hero-conteudo p {
+    font-family: Minecraft, sans-serif;
     font-size: 24px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(233, 233, 233, 0.998);
     margin-bottom: 24px;
     text-shadow: 1px 1px 2px rgb(82, 81, 81);
 }
@@ -95,16 +99,16 @@ body {
 button {
     padding: 20px 20px;
     border-radius: 6px;
-    border: 2px solid rgb(122, 120, 120);
-    background-color: #878989;
-    color: #4e4e52;
+    border: 2px solid rgb(223, 213, 172);
+    background-color: #98c9a4;
+    color: #313d3e;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #a4b1b7;
+    background-color: #5d876f;
 }
 
 /* cards */
@@ -116,18 +120,17 @@ button:hover {
 .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
 .card {
-    margin-top: 110px;
+    flex: 0 0 5em;
+    margin-top: 10px;
     min-width: 440px;
     min-height: 220px;
     padding: 20px;
-    background-color: #878989;
     border-radius: 12px 25px;
     box-shadow: 10px 10px 5px rgb(104, 101, 101);
     box-shadow: inset 0px 0px 10px rgb(197, 195, 195);
@@ -141,6 +144,8 @@ button:hover {
     margin-bottom: 24px;
     font-size: 60px;
     font-family: Comfortaa, sans-serif;
+    color: #fdfdfb;
+    text-shadow: 1px 1px 4px black;
 }
 
 .card h3 {
@@ -158,6 +163,10 @@ button:hover {
 .icone {
     font-size: 20px;
     margin-bottom: 12px;
+}
+
+.card-container :first-child {
+    background-image: url(backrooms-trailer-desktop-7022c.jpg);
 }
 
 /* Secao em Grade com CSS Grid */
@@ -202,56 +211,66 @@ button:hover {
 
 /* footer */
 
-footer {
-    background-color: rgb(138, 137, 134);
-    padding: 20px 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.footer-secoes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-secoes h4 {
-    color: white;
-    margin-bottom: 12px;
-}
-
-.footer-secoes p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin: 4px 0;
-}
-
-.linksrapidos {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
-
-.linksrapidos a {
-    color: rgb(228, 225, 225);
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-secoes a:hover {
+.footer {
+    background-color: #1e293b;
     color: #ffffff;
+    padding: 30px 20px;
+    font-family: sans-serif;
+    opacity: 0.65;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #333333;
-    margin: 20px 0;
-}
-
-.copyright {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     text-align: center;
-    font-size: 20px;
-    color: #855f5f;
+}
+
+.footer-brand h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #38bdf8;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #38bdf8;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #334155;
+    margin-top: 25px;
+    padding-top: 15px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-left: 335px;
+    margin-right: 335px;
+}
+
+.footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
 }
