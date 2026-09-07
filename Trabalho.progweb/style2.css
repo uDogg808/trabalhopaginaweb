@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(4px);
+    margin-top: 110px;
+}
+
+.volta a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(40, 41, 42);
+    font-family: Minecraft, sans-serif;
+    font-size: 24px;
+}
+
+.volta a:hover {
+    color: rgb(151, 128, 172);
+}
+
+.NADAQUI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(40, 41, 42);
+    font-size: 60px;
+    font-family: Comfortaa, sans-serif;
+}

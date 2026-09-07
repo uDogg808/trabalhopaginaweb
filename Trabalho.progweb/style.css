@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(fundo2.jpg);
+    background-image: url(imagens/fundo2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(138, 137, 134);
+    background-color: #1e293b;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -98,8 +98,8 @@ body {
 
 button {
     padding: 20px 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(223, 213, 172);
+    border-radius: 30px;
+    border: 2px solid rgb(147, 195, 129);
     background-color: #98c9a4;
     color: #313d3e;
     font-weight: bold;
@@ -108,7 +108,8 @@ button {
 }
 
 button:hover {
-    background-color: #5d876f;
+    filter: drop-shadow(0px 0px 35px #94fbfb);
+    background-color: #87ad97;
 }
 
 /* cards */
@@ -133,9 +134,11 @@ button:hover {
     padding: 20px;
     border-radius: 12px 25px;
     box-shadow: 10px 10px 5px rgb(104, 101, 101);
-    box-shadow: inset 0px 0px 10px rgb(197, 195, 195);
+    box-shadow: inset 0px 0px 10px rgb(77, 77, 77);
     text-align: center;
     box-sizing: border-box;
+    border: solid rgba(60, 48, 42, 0.773) 2px;
+    position: relative;
 }
 
 .cards h2 {
@@ -146,27 +149,108 @@ button:hover {
     font-family: Comfortaa, sans-serif;
     color: #fdfdfb;
     text-shadow: 1px 1px 4px black;
+    filter: drop-shadow(0px 0px 20px #ffffff);
+    transition: filter 0.3s ease;
 }
 
 .card h3 {
     font-family: Comfortaa, sans-serif;
     font-size: 24px;
-    color: #2c3e50;
+    margin: auto;
+    color: #f6f8fa;
+    text-shadow: 1px 1px 4px black;
+    filter: drop-shadow(0px 0px 20px #ffffff);
+    transition: filter 0.3s ease;
     margin-bottom: 8px;
+    margin-top: 55px;
 }
 
 .descricao {
-    font-size: 14px;
-    color: #666666;
+    font-family: Minecraft, sans-serif;
+    font-size: 20px;
+    color: #f1eeee;
+    text-shadow: 1px 1px 4px black;
+    filter: drop-shadow(0px 0px 20px #ffffff);
+    transition: filter 0.3s ease;
 }
+
 
 .icone {
     font-size: 20px;
     margin-bottom: 12px;
 }
 
-.card-container :first-child {
-    background-image: url(backrooms-trailer-desktop-7022c.jpg);
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    object-fit: cover;
+    border-top-left-radius: 1px;
+    filter: drop-shadow(0px 0px 20px #ffffff);
+    transition: filter 0.3s ease;
+}
+
+.card:hover {
+    filter: drop-shadow(0px 0px 35px #ecefef);
+}
+
+.card-container .card:nth-child(1) {
+    background-image: url(imagens/backrooms-trailer-desktop-7022c.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(2) {
+    background-image: url(imagens/ilhadaxicra.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(3) {
+    background-image: url(imagens/castelomario.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(4) {
+    background-image: url(imagens/dirthmouth.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(5) {
+    background-image: url(imagens/torres\ tortas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(6) {
+    background-image: url(imagens/terraria.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(7) {
+    background-image: url(imagens/undetale.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container .card:nth-child(8) {
+    background-image: url(imagens/eldering.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Secao em Grade com CSS Grid */
@@ -177,14 +261,35 @@ button:hover {
 
 .grade-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
 
 .item {
     font-family: Minecraft, sans-serif;
     letter-spacing: 2px;
-    min-height: 200px;
+    min-height: 240px;
+    min-width: 200px;
+    border-radius: 10px;
+    border: solid rgb(24, 23, 23) 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: rgb(233, 229, 229);
+    text-shadow: 1px 1px 4px black;
+    filter: drop-shadow(0px 0px 20px #1a1919);
+    transition: filter 0.3s ease;
+}
+
+.item-destaque {
+    display: grid;
+    grid-column: span 2;
+    font-family: Minecraft, sans-serif;
+    letter-spacing: 2px;
+    min-height: 240px;
     min-width: 200px;
     border-radius: 10px;
     display: flex;
@@ -192,14 +297,25 @@ button:hover {
     align-items: center;
     padding: 16px;
     box-sizing: border-box;
-    font-size: 16px;
-    color: black;
-    background-color: #d1c795;
+    font-size: 46px;
+    color: rgb(249, 202, 73);
+    text-shadow: 1px 1px 4px rgb(149, 123, 30);
+    filter: drop-shadow(0px 0px 35px #c6c371);
+    box-shadow: inset 0px 0px 35px rgb(190, 199, 65);
+    background-image: url(imagens/parqueagradavel.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.item-destaque {
-    grid-column: span 2;
-    font-size: 20px;
+.item-destaque:hover {
+    filter: drop-shadow(0px 0px 35px #cdc612);
+    box-shadow: inset 0px 0px 35px rgb(183, 194, 21);
+}
+
+.item:hover {
+    filter: drop-shadow(0px 0px 35px #363635);
+    box-shadow: inset 0px 0px 35px rgb(42, 42, 42);
 }
 
 .grade h2 {
@@ -207,6 +323,50 @@ button:hover {
     margin-bottom: 24px;
     font-size: 60px;
     font-family: Comfortaa, sans-serif;
+    color: #fdfdfb;
+    text-shadow: 1px 1px 4px black;
+}
+
+.grade-container .item:nth-child(2) {
+    background-image: url(imagens/poolrooms.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grade-container .item:nth-child(3) {
+    background-image: url(imagens/ilhacassino.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grade-container .item:nth-child(4) {
+    background-image: url(imagens/castelobowser.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grade-container .item:nth-child(5) {
+    background-image: url(imagens/hell\ terraria.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grade-container .item:nth-child(6) {
+    background-image: url(imagens/arenasans.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grade-container .item:nth-child(7) {
+    background-image: url(imagens/grimm.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* footer */
@@ -232,7 +392,7 @@ button:hover {
 .footer-brand h2 {
     margin: 0;
     font-size: 1.5rem;
-    color: #38bdf8;
+    color: rgb(251, 250, 250);
 }
 
 .footer-nav ul {
