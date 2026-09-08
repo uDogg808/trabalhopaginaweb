@@ -116,6 +116,7 @@ button:hover {
 
 .cards {
     padding: 40px;
+    margin-top: 100px;
 }
 
 .card-container {
@@ -257,6 +258,7 @@ button:hover {
 
 .grade {
     padding: 40px;
+    margin-top: 100px;
 }
 
 .grade-container {
@@ -372,6 +374,7 @@ button:hover {
 /* footer */
 
 .footer {
+    margin-top: 100px;
     background-color: #1e293b;
     color: #ffffff;
     padding: 30px 20px;
